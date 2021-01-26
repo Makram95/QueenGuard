@@ -9,8 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            Text("🍯🐝💨")
+                .font(.system(size: 100))
+                .padding()
+            Text("Great things coming soon...")
+                .font(.title)
+                .bold()
+                .foregroundColor(.white)
+        }
+        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .center)
+            .background(Color("AccentColor")).edgesIgnoringSafeArea(.all)
     }
 }
 
