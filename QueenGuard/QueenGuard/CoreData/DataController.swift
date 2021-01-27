@@ -12,7 +12,7 @@ class DataController: ObservableObject{
     let container: NSPersistentCloudKitContainer
     
     init(inMemory: Bool = false){
-        container = NSPersistentCloudKitContainer(name: "Main") //main is name of Model-file
+        container = NSPersistentCloudKitContainer(name: "Main", managedObjectModel: Self.model) //main is name of Model-file
         
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
@@ -35,6 +35,17 @@ class DataController: ObservableObject{
             fatalError("Fatal error creating preview: \(error.localizedDescription)")
         }
         return dataController
+    }()
+
+    static let model: NSManagedObjectModel = {
+        guard  let url = Bundle.main.url(forResource: "Main", withExtension: "momd") else {
+            fatalError("Failed to locate model file.")
+        }
+
+        guard let managedObjectModel = NSManagedObjectModel(contentsOf: url) else {
+            fatalError("Failed to load model file.")
+        }
+        return managedObjectModel
     }()
     
     func createSampleDate() throws {
@@ -78,12 +89,12 @@ class DataController: ObservableObject{
     }
     func deleteAll(){
         let fetchRequest1: NSFetchRequest<NSFetchRequestResult> = Hive.fetchRequest()
-        let batchDeletRequest1 = NSBatchDeleteRequest(fetchRequest: fetchRequest1)
-        _ = try? container.viewContext.execute(batchDeletRequest1)
+        let batchDeleteRequest1 = NSBatchDeleteRequest(fetchRequest: fetchRequest1)
+        _ = try? container.viewContext.execute(batchDeleteRequest1)
         
         let fetchRequest2: NSFetchRequest<NSFetchRequestResult> = Apiary.fetchRequest()
-        let batchDeletRequest2 = NSBatchDeleteRequest(fetchRequest: fetchRequest2)
-        _ = try? container.viewContext.execute(batchDeletRequest2)
+        let batchDeleteRequest2 = NSBatchDeleteRequest(fetchRequest: fetchRequest2)
+        _ = try? container.viewContext.execute(batchDeleteRequest2)
     }
     
     func count<T>(for fetchRequest: NSFetchRequest<T>)->Int{
