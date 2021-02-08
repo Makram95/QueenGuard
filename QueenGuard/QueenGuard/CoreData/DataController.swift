@@ -53,26 +53,24 @@ class DataController: ObservableObject{
         
         for i in 1...5{
             let apiary = Apiary(context: viewContext)
-            apiary.id = UUID()
+            apiary.id = UUID().uuidString
             apiary.creationDate = Date()
-            apiary.isActive = Bool.random()
             apiary.capacity = Int16.random(in:1...10)
             apiary.lastChangeDate = Date()
-            apiary.name = "Apiary \(i)"
-            apiary.xCoordinate = 0.00
-            apiary.yCoordinate = 0.000
+            apiary.name = "Apiary \(i)"            
             apiary.registrationNumber = "testRegNR"
             
             for j in 1...10{
                 let hive = Hive(context: viewContext)
                 hive.creationDate = Date()
-                hive.hiveType = "TestType"
-                hive.id = UUID()
+                hive.type = "TestType"
+                hive.id = UUID().uuidString
                 hive.isAlive = Bool.random()
                 hive.name = "Hive \(j)"
                 hive.isWintered = Bool.random()
                 hive.lastChangeDate = Date()
                 hive.apiary = apiary
+                
             }
         }
         try viewContext.save()
@@ -86,6 +84,7 @@ class DataController: ObservableObject{
     
     func delete(_ object: NSManagedObject){
         container.viewContext.delete(object)
+        save()
     }
     func deleteAll(){
         let fetchRequest1: NSFetchRequest<NSFetchRequestResult> = Hive.fetchRequest()
@@ -95,6 +94,7 @@ class DataController: ObservableObject{
         let fetchRequest2: NSFetchRequest<NSFetchRequestResult> = Apiary.fetchRequest()
         let batchDeleteRequest2 = NSBatchDeleteRequest(fetchRequest: fetchRequest2)
         _ = try? container.viewContext.execute(batchDeleteRequest2)
+        save()
     }
     
     func count<T>(for fetchRequest: NSFetchRequest<T>)->Int{

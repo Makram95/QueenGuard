@@ -7,23 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B41532DD25C83A350070629E /* AllApiariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41532DC25C83A350070629E /* AllApiariesView.swift */; };
+		B41532E125C83B170070629E /* DummyDataButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41532E025C83B170070629E /* DummyDataButtonView.swift */; };
+		B41532F725C83F9E0070629E /* ApiaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41532F625C83F9E0070629E /* ApiaryExtension.swift */; };
+		B41532FB25C8426C0070629E /* HiveExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41532FA25C8426C0070629E /* HiveExtension.swift */; };
 		B4755CA325C05BB5007DBEB1 /* QueenGuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4755CA225C05BB5007DBEB1 /* QueenGuardApp.swift */; };
-		B4755CA525C05BB5007DBEB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4755CA425C05BB5007DBEB1 /* ContentView.swift */; };
+		B4755CA525C05BB5007DBEB1 /* ContentViewIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4755CA425C05BB5007DBEB1 /* ContentViewIOS.swift */; };
 		B4755CA725C05BB6007DBEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4755CA625C05BB6007DBEB1 /* Assets.xcassets */; };
 		B4755CAA25C05BB6007DBEB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4755CA925C05BB6007DBEB1 /* Preview Assets.xcassets */; };
 		B4755CE125C065DA007DBEB1 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4755CDF25C065DA007DBEB1 /* Main.xcdatamodeld */; };
 		B4755CE525C0682F007DBEB1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4755CE425C0682F007DBEB1 /* DataController.swift */; };
+		B48BE77E25D1656800EC5597 /* AddApiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48BE77D25D1656800EC5597 /* AddApiaryView.swift */; };
+		B48BE78125D174B100EC5597 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48BE78025D174B100EC5597 /* StringExtension.swift */; };
+		B4E629BE25C846C900302EB1 /* ApiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E629BD25C846C900302EB1 /* ApiaryView.swift */; };
+		B4E629C425C848A900302EB1 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E629C325C848A900302EB1 /* CloudKit.framework */; };
+		B4E629C825C8514600302EB1 /* MainOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E629C725C8514600302EB1 /* MainOverview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B41532DC25C83A350070629E /* AllApiariesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllApiariesView.swift; sourceTree = "<group>"; };
+		B41532E025C83B170070629E /* DummyDataButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDataButtonView.swift; sourceTree = "<group>"; };
+		B41532F625C83F9E0070629E /* ApiaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiaryExtension.swift; sourceTree = "<group>"; };
+		B41532FA25C8426C0070629E /* HiveExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiveExtension.swift; sourceTree = "<group>"; };
 		B4755C9F25C05BB5007DBEB1 /* QueenGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QueenGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4755CA225C05BB5007DBEB1 /* QueenGuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueenGuardApp.swift; sourceTree = "<group>"; };
-		B4755CA425C05BB5007DBEB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B4755CA425C05BB5007DBEB1 /* ContentViewIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewIOS.swift; sourceTree = "<group>"; };
 		B4755CA625C05BB6007DBEB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4755CA925C05BB6007DBEB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4755CAB25C05BB6007DBEB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4755CE025C065DA007DBEB1 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		B4755CE425C0682F007DBEB1 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B48BE77D25D1656800EC5597 /* AddApiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddApiaryView.swift; sourceTree = "<group>"; };
+		B48BE78025D174B100EC5597 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		B4E629BD25C846C900302EB1 /* ApiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiaryView.swift; sourceTree = "<group>"; };
+		B4E629C025C848A500302EB1 /* QueenGuard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QueenGuard.entitlements; sourceTree = "<group>"; };
+		B4E629C325C848A900302EB1 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		B4E629C725C8514600302EB1 /* MainOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainOverview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +50,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E629C425C848A900302EB1 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B41532F425C83F6E0070629E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4755CA225C05BB5007DBEB1 /* QueenGuardApp.swift */,
+				B4755CA425C05BB5007DBEB1 /* ContentViewIOS.swift */,
+				B41532E025C83B170070629E /* DummyDataButtonView.swift */,
+				B4E629C625C8513800302EB1 /* Overview */,
+				B4E629BC25C846A600302EB1 /* ApiaryView */,
+				B41532F525C83F780070629E /* AllApiaries */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B41532F525C83F780070629E /* AllApiaries */ = {
+			isa = PBXGroup;
+			children = (
+				B41532DC25C83A350070629E /* AllApiariesView.swift */,
+				B48BE77D25D1656800EC5597 /* AddApiaryView.swift */,
+			);
+			path = AllApiaries;
+			sourceTree = "<group>";
+		};
 		B4755C9625C05BB5007DBEB1 = {
 			isa = PBXGroup;
 			children = (
 				B4755CA125C05BB5007DBEB1 /* QueenGuard */,
 				B4755CA025C05BB5007DBEB1 /* Products */,
+				B4E629C225C848A900302EB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +99,10 @@
 		B4755CA125C05BB5007DBEB1 /* QueenGuard */ = {
 			isa = PBXGroup;
 			children = (
+				B4E629C025C848A500302EB1 /* QueenGuard.entitlements */,
+				B48BE78025D174B100EC5597 /* StringExtension.swift */,
+				B41532F425C83F6E0070629E /* Views */,
 				B4755CE325C06805007DBEB1 /* CoreData */,
-				B4755CA225C05BB5007DBEB1 /* QueenGuardApp.swift */,
-				B4755CA425C05BB5007DBEB1 /* ContentView.swift */,
 				B4755CA625C05BB6007DBEB1 /* Assets.xcassets */,
 				B4755CAB25C05BB6007DBEB1 /* Info.plist */,
 				B4755CA825C05BB6007DBEB1 /* Preview Content */,
@@ -79,8 +123,34 @@
 			children = (
 				B4755CDF25C065DA007DBEB1 /* Main.xcdatamodeld */,
 				B4755CE425C0682F007DBEB1 /* DataController.swift */,
+				B41532F625C83F9E0070629E /* ApiaryExtension.swift */,
+				B41532FA25C8426C0070629E /* HiveExtension.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B4E629BC25C846A600302EB1 /* ApiaryView */ = {
+			isa = PBXGroup;
+			children = (
+				B4E629BD25C846C900302EB1 /* ApiaryView.swift */,
+			);
+			path = ApiaryView;
+			sourceTree = "<group>";
+		};
+		B4E629C225C848A900302EB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4E629C325C848A900302EB1 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4E629C625C8513800302EB1 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				B4E629C725C8514600302EB1 /* MainOverview.swift */,
+			);
+			path = Overview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +223,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4755CE125C065DA007DBEB1 /* Main.xcdatamodeld in Sources */,
+				B4E629C825C8514600302EB1 /* MainOverview.swift in Sources */,
+				B4E629BE25C846C900302EB1 /* ApiaryView.swift in Sources */,
 				B4755CE525C0682F007DBEB1 /* DataController.swift in Sources */,
-				B4755CA525C05BB5007DBEB1 /* ContentView.swift in Sources */,
+				B41532DD25C83A350070629E /* AllApiariesView.swift in Sources */,
+				B48BE77E25D1656800EC5597 /* AddApiaryView.swift in Sources */,
+				B4755CA525C05BB5007DBEB1 /* ContentViewIOS.swift in Sources */,
+				B41532F725C83F9E0070629E /* ApiaryExtension.swift in Sources */,
+				B48BE78125D174B100EC5597 /* StringExtension.swift in Sources */,
 				B4755CA325C05BB5007DBEB1 /* QueenGuardApp.swift in Sources */,
+				B41532E125C83B170070629E /* DummyDataButtonView.swift in Sources */,
+				B41532FB25C8426C0070629E /* HiveExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QueenGuard/QueenGuard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20200126;
 				DEVELOPMENT_ASSET_PATHS = "\"QueenGuard/Preview Content\"";
@@ -307,6 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QueenGuard/QueenGuard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20200126;
 				DEVELOPMENT_ASSET_PATHS = "\"QueenGuard/Preview Content\"";
