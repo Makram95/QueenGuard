@@ -126,7 +126,7 @@ struct AddApiaryView: View {
         }
     }
     func checkInputsValid(){
-        if !lat.isNumeric || !long.isNumeric || !capacity.isNumeric || name.isEmpty || regNr.isEmpty{
+        if !lat.isNumeric || !long.isNumeric || !capacity.isNumeric || name.isEmpty || regNr.isEmpty || (Int(capacity) ?? -1 < 0){
             saveDisabled = true
         }else{
             saveDisabled = false

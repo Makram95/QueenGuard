@@ -17,7 +17,7 @@ extension Apiary {
         
         apiary.name = "Example Apiary"
         apiary.id = "0"
-        apiary.capacity = 0
+        apiary.capacity = 10
         apiary.registrationNumber = "5352"
         apiary.lat = 2.12345
         apiary.long = 2.46543

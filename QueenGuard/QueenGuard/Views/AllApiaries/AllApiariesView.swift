@@ -28,8 +28,9 @@ struct AllApiariesView: View {
                 VStack{
                     ForEach(apiaries.wrappedValue){ apiary in
                         NavigationLink(destination: ApiaryView(apiary: apiary)) {
-                            Text(String(apiary.apiaryName))
-                        }
+                            ApiaryListItem(apiary: apiary)
+                                .padding([.horizontal,.top])
+                        }.buttonStyle(PlainButtonStyle())
                     }
                     Button("Add New Apiary") {
                         showAddModal.toggle()
@@ -38,6 +39,7 @@ struct AllApiariesView: View {
                     AddApiaryView()
                 })
             }.navigationTitle("Apiaries")
+            .background(Color.systemGroupedBackground.ignoresSafeArea())
         }
     }
 }

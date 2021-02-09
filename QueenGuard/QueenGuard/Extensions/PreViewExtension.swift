@@ -38,10 +38,24 @@ struct PreviewProviderModifier : ViewModifier{
                 .preferredColorScheme(.dark)
                 .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
                 .previewDisplayName("iPhone SE Dark")
-            
         }
     }
+}
+struct SmallPreview : ViewModifier{
+    func body(content:Content)->some View{
+        Group{
+            
+            content
+                .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro Max"))
+                .previewDisplayName("iPhone 11 Pro Max")
+   
     
+            content
+                .preferredColorScheme(.dark)
+                .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro Max"))
+                .previewDisplayName("iPhone 11 Pro Max Dark")
+        }
+    }
 }
 
 extension View {
@@ -49,5 +63,9 @@ extension View {
     
     func makePreViewModifier() -> some View{
         modifier(PreviewProviderModifier())
+    }
+    
+    func makeSmallPreview() -> some View{
+        modifier(SmallPreview())
     }
 }

@@ -12,6 +12,8 @@
 		B41532F725C83F9E0070629E /* ApiaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41532F625C83F9E0070629E /* ApiaryExtension.swift */; };
 		B41532FB25C8426C0070629E /* HiveExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41532FA25C8426C0070629E /* HiveExtension.swift */; };
 		B43ABB9D25D2BAB0006534F8 /* PreViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43ABB9C25D2BAB0006534F8 /* PreViewExtension.swift */; };
+		B43ABBA125D2BD25006534F8 /* ApiaryListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43ABBA025D2BD25006534F8 /* ApiaryListItem.swift */; };
+		B43ABBA525D2C1EF006534F8 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43ABBA425D2C1EF006534F8 /* DateFormatterExtension.swift */; };
 		B4755CA325C05BB5007DBEB1 /* QueenGuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4755CA225C05BB5007DBEB1 /* QueenGuardApp.swift */; };
 		B4755CA525C05BB5007DBEB1 /* ContentViewIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4755CA425C05BB5007DBEB1 /* ContentViewIOS.swift */; };
 		B4755CA725C05BB6007DBEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4755CA625C05BB6007DBEB1 /* Assets.xcassets */; };
@@ -20,6 +22,7 @@
 		B4755CE525C0682F007DBEB1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4755CE425C0682F007DBEB1 /* DataController.swift */; };
 		B48BE77E25D1656800EC5597 /* AddApiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48BE77D25D1656800EC5597 /* AddApiaryView.swift */; };
 		B48BE78125D174B100EC5597 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48BE78025D174B100EC5597 /* StringExtension.swift */; };
+		B490259525D2C8B70030DD92 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B490259425D2C8B70030DD92 /* ColorExtension.swift */; };
 		B4E629BE25C846C900302EB1 /* ApiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E629BD25C846C900302EB1 /* ApiaryView.swift */; };
 		B4E629C425C848A900302EB1 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E629C325C848A900302EB1 /* CloudKit.framework */; };
 		B4E629C825C8514600302EB1 /* MainOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E629C725C8514600302EB1 /* MainOverview.swift */; };
@@ -31,6 +34,8 @@
 		B41532F625C83F9E0070629E /* ApiaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiaryExtension.swift; sourceTree = "<group>"; };
 		B41532FA25C8426C0070629E /* HiveExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiveExtension.swift; sourceTree = "<group>"; };
 		B43ABB9C25D2BAB0006534F8 /* PreViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreViewExtension.swift; sourceTree = "<group>"; };
+		B43ABBA025D2BD25006534F8 /* ApiaryListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiaryListItem.swift; sourceTree = "<group>"; };
+		B43ABBA425D2C1EF006534F8 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
 		B4755C9F25C05BB5007DBEB1 /* QueenGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QueenGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4755CA225C05BB5007DBEB1 /* QueenGuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueenGuardApp.swift; sourceTree = "<group>"; };
 		B4755CA425C05BB5007DBEB1 /* ContentViewIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewIOS.swift; sourceTree = "<group>"; };
@@ -41,6 +46,7 @@
 		B4755CE425C0682F007DBEB1 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		B48BE77D25D1656800EC5597 /* AddApiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddApiaryView.swift; sourceTree = "<group>"; };
 		B48BE78025D174B100EC5597 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		B490259425D2C8B70030DD92 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		B4E629BD25C846C900302EB1 /* ApiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiaryView.swift; sourceTree = "<group>"; };
 		B4E629C025C848A500302EB1 /* QueenGuard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QueenGuard.entitlements; sourceTree = "<group>"; };
 		B4E629C325C848A900302EB1 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -77,6 +83,7 @@
 			children = (
 				B41532DC25C83A350070629E /* AllApiariesView.swift */,
 				B48BE77D25D1656800EC5597 /* AddApiaryView.swift */,
+				B43ABBA025D2BD25006534F8 /* ApiaryListItem.swift */,
 			);
 			path = AllApiaries;
 			sourceTree = "<group>";
@@ -84,8 +91,10 @@
 		B43ABB9F25D2BAB6006534F8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B490259425D2C8B70030DD92 /* ColorExtension.swift */,
 				B48BE78025D174B100EC5597 /* StringExtension.swift */,
 				B43ABB9C25D2BAB0006534F8 /* PreViewExtension.swift */,
+				B43ABBA425D2C1EF006534F8 /* DateFormatterExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -233,7 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B43ABBA125D2BD25006534F8 /* ApiaryListItem.swift in Sources */,
 				B4755CE125C065DA007DBEB1 /* Main.xcdatamodeld in Sources */,
+				B43ABBA525D2C1EF006534F8 /* DateFormatterExtension.swift in Sources */,
 				B43ABB9D25D2BAB0006534F8 /* PreViewExtension.swift in Sources */,
 				B4E629C825C8514600302EB1 /* MainOverview.swift in Sources */,
 				B4E629BE25C846C900302EB1 /* ApiaryView.swift in Sources */,
@@ -242,6 +253,7 @@
 				B48BE77E25D1656800EC5597 /* AddApiaryView.swift in Sources */,
 				B4755CA525C05BB5007DBEB1 /* ContentViewIOS.swift in Sources */,
 				B41532F725C83F9E0070629E /* ApiaryExtension.swift in Sources */,
+				B490259525D2C8B70030DD92 /* ColorExtension.swift in Sources */,
 				B48BE78125D174B100EC5597 /* StringExtension.swift in Sources */,
 				B4755CA325C05BB5007DBEB1 /* QueenGuardApp.swift in Sources */,
 				B41532E125C83B170070629E /* DummyDataButtonView.swift in Sources */,
