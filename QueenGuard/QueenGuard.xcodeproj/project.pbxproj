@@ -11,6 +11,7 @@
 		B41532E125C83B170070629E /* DummyDataButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41532E025C83B170070629E /* DummyDataButtonView.swift */; };
 		B41532F725C83F9E0070629E /* ApiaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41532F625C83F9E0070629E /* ApiaryExtension.swift */; };
 		B41532FB25C8426C0070629E /* HiveExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41532FA25C8426C0070629E /* HiveExtension.swift */; };
+		B43ABB9D25D2BAB0006534F8 /* PreViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43ABB9C25D2BAB0006534F8 /* PreViewExtension.swift */; };
 		B4755CA325C05BB5007DBEB1 /* QueenGuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4755CA225C05BB5007DBEB1 /* QueenGuardApp.swift */; };
 		B4755CA525C05BB5007DBEB1 /* ContentViewIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4755CA425C05BB5007DBEB1 /* ContentViewIOS.swift */; };
 		B4755CA725C05BB6007DBEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4755CA625C05BB6007DBEB1 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		B41532E025C83B170070629E /* DummyDataButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDataButtonView.swift; sourceTree = "<group>"; };
 		B41532F625C83F9E0070629E /* ApiaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiaryExtension.swift; sourceTree = "<group>"; };
 		B41532FA25C8426C0070629E /* HiveExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiveExtension.swift; sourceTree = "<group>"; };
+		B43ABB9C25D2BAB0006534F8 /* PreViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreViewExtension.swift; sourceTree = "<group>"; };
 		B4755C9F25C05BB5007DBEB1 /* QueenGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QueenGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4755CA225C05BB5007DBEB1 /* QueenGuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueenGuardApp.swift; sourceTree = "<group>"; };
 		B4755CA425C05BB5007DBEB1 /* ContentViewIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewIOS.swift; sourceTree = "<group>"; };
@@ -79,6 +81,15 @@
 			path = AllApiaries;
 			sourceTree = "<group>";
 		};
+		B43ABB9F25D2BAB6006534F8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B48BE78025D174B100EC5597 /* StringExtension.swift */,
+				B43ABB9C25D2BAB0006534F8 /* PreViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B4755C9625C05BB5007DBEB1 = {
 			isa = PBXGroup;
 			children = (
@@ -100,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E629C025C848A500302EB1 /* QueenGuard.entitlements */,
-				B48BE78025D174B100EC5597 /* StringExtension.swift */,
+				B43ABB9F25D2BAB6006534F8 /* Extensions */,
 				B41532F425C83F6E0070629E /* Views */,
 				B4755CE325C06805007DBEB1 /* CoreData */,
 				B4755CA625C05BB6007DBEB1 /* Assets.xcassets */,
@@ -223,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4755CE125C065DA007DBEB1 /* Main.xcdatamodeld in Sources */,
+				B43ABB9D25D2BAB0006534F8 /* PreViewExtension.swift in Sources */,
 				B4E629C825C8514600302EB1 /* MainOverview.swift in Sources */,
 				B4E629BE25C846C900302EB1 /* ApiaryView.swift in Sources */,
 				B4755CE525C0682F007DBEB1 /* DataController.swift in Sources */,
