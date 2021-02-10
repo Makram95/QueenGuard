@@ -20,6 +20,8 @@
 		B4755CAA25C05BB6007DBEB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4755CA925C05BB6007DBEB1 /* Preview Assets.xcassets */; };
 		B4755CE125C065DA007DBEB1 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4755CDF25C065DA007DBEB1 /* Main.xcdatamodeld */; };
 		B4755CE525C0682F007DBEB1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4755CE425C0682F007DBEB1 /* DataController.swift */; };
+		B47CD9B225D41B31009D2972 /* HivesListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47CD9B125D41B31009D2972 /* HivesListItem.swift */; };
+		B47CD9B625D420F4009D2972 /* HiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47CD9B525D420F4009D2972 /* HiveView.swift */; };
 		B48BE77E25D1656800EC5597 /* AddApiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48BE77D25D1656800EC5597 /* AddApiaryView.swift */; };
 		B48BE78125D174B100EC5597 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48BE78025D174B100EC5597 /* StringExtension.swift */; };
 		B490259525D2C8B70030DD92 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B490259425D2C8B70030DD92 /* ColorExtension.swift */; };
@@ -44,6 +46,8 @@
 		B4755CAB25C05BB6007DBEB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4755CE025C065DA007DBEB1 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		B4755CE425C0682F007DBEB1 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B47CD9B125D41B31009D2972 /* HivesListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HivesListItem.swift; sourceTree = "<group>"; };
+		B47CD9B525D420F4009D2972 /* HiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiveView.swift; sourceTree = "<group>"; };
 		B48BE77D25D1656800EC5597 /* AddApiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddApiaryView.swift; sourceTree = "<group>"; };
 		B48BE78025D174B100EC5597 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		B490259425D2C8B70030DD92 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 				B4755CA425C05BB5007DBEB1 /* ContentViewIOS.swift */,
 				B41532E025C83B170070629E /* DummyDataButtonView.swift */,
 				B4E629C625C8513800302EB1 /* Overview */,
+				B47CD9B425D420E3009D2972 /* HiveView */,
 				B4E629BC25C846A600302EB1 /* ApiaryView */,
 				B41532F525C83F780070629E /* AllApiaries */,
 			);
@@ -149,10 +154,19 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		B47CD9B425D420E3009D2972 /* HiveView */ = {
+			isa = PBXGroup;
+			children = (
+				B47CD9B525D420F4009D2972 /* HiveView.swift */,
+			);
+			path = HiveView;
+			sourceTree = "<group>";
+		};
 		B4E629BC25C846A600302EB1 /* ApiaryView */ = {
 			isa = PBXGroup;
 			children = (
 				B4E629BD25C846C900302EB1 /* ApiaryView.swift */,
+				B47CD9B125D41B31009D2972 /* HivesListItem.swift */,
 			);
 			path = ApiaryView;
 			sourceTree = "<group>";
@@ -243,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B43ABBA125D2BD25006534F8 /* ApiaryListItem.swift in Sources */,
+				B47CD9B225D41B31009D2972 /* HivesListItem.swift in Sources */,
 				B4755CE125C065DA007DBEB1 /* Main.xcdatamodeld in Sources */,
 				B43ABBA525D2C1EF006534F8 /* DateFormatterExtension.swift in Sources */,
 				B43ABB9D25D2BAB0006534F8 /* PreViewExtension.swift in Sources */,
@@ -257,6 +272,7 @@
 				B48BE78125D174B100EC5597 /* StringExtension.swift in Sources */,
 				B4755CA325C05BB5007DBEB1 /* QueenGuardApp.swift in Sources */,
 				B41532E125C83B170070629E /* DummyDataButtonView.swift in Sources */,
+				B47CD9B625D420F4009D2972 /* HiveView.swift in Sources */,
 				B41532FB25C8426C0070629E /* HiveExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

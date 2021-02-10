@@ -1,19 +1,18 @@
 //
-//  ApiaryListItem.swift
+//  HivesListItem.swift
 //  QueenGuard
 //
-//  Created by Marc on 09.02.21.
+//  Created by Marc on 10.02.21.
 //
 
 import SwiftUI
 
-struct ApiaryListItem: View {
-    var apiary: Apiary
-    
+struct HivesListItem: View {
+    var hive: Hive
     var body: some View {
         VStack(alignment: .leading){
             HStack{
-                Text(apiary.apiaryName)
+                Text(hive.hiveName)
                     .font(.title)
                     .bold()
                 Spacer()
@@ -21,24 +20,34 @@ struct ApiaryListItem: View {
                     .foregroundColor(.accentColor)
             }
             HStack{
-                Text("Registration Nr.:")
+                Text("Type:")
                     .font(.headline)
-                Text(apiary.apiaryRegistrationNumber)
+                Text(hive.hiveType)
                     
             }
             HStack{
                 Text("Last changed:")
                     .font(.headline)
-                Text(createMediumDateString(date: apiary.apiaryLastChangeDate))
+                Text(createMediumDateString(date: hive.hiveLastChangeDate))
             }
             HStack{
-            Text("Capacity:")
+            Text("Status:")
                 .font(.headline)
-                Text("\(apiary.apiaryHiveCount)/\(apiary.capacity)")
+                Spacer()
+                
+                if hive.isWintered{
+                    Image(systemName: "snow")
+                }
+                if hive.isAlive{
+                    Image(systemName: "checkmark.circle.fill")
+                        .foregroundColor(.green)
+                }else{
+                    Image(systemName: "multiply.circle.fill")
+                        .foregroundColor(.red)
+                }
             }
     
-            ProgressView(value: Double(apiary.apiaryHiveCount / Int(apiary.capacity)))
-                .padding(.horizontal)
+            
             
         }.padding()
         .background(Color.secondarySystemGroupedBackground)
@@ -47,16 +56,11 @@ struct ApiaryListItem: View {
         .shadow(color: .accentColor, radius: 0.5)
         .shadow(color: .accentColor, radius: 0.5)
         .shadow(color: .accentColor, radius: 0.5)
-        
-        
-        
-        
     }
 }
 
-struct ApiaryListItem_Previews: PreviewProvider {
+struct HivesListItem_Previews: PreviewProvider {
     static var previews: some View {
-        ApiaryListItem(apiary: Apiary.example)
-            .makeSmallPreview()
+        HivesListItem(hive: Hive.example)
     }
 }

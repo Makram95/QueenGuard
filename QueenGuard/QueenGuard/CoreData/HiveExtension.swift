@@ -9,6 +9,24 @@ import Foundation
 
 extension Hive{
     
+    static var example: Hive  {
+        let controller = DataController.preview
+        let viewContext = controller.container.viewContext
+        
+        let hive = Hive(context: viewContext)
+        hive.creationDate = Date()
+        hive.name = "Test"
+        hive.type = "Zander"
+        hive.id = UUID().uuidString
+        hive.isAlive = true
+        hive.lastChangeDate = Date()
+        hive.isWintered = false
+        
+        
+        
+        return hive
+    }
+    
     var hiveName: String{
         name ?? NSLocalizedString("New Hive", comment: "")
     }
