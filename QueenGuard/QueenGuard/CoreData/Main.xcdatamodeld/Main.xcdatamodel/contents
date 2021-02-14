@@ -12,6 +12,11 @@
         <attribute name="registrationNumber" optional="YES" attributeType="String"/>
         <relationship name="hives" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Hive" inverseName="apiary" inverseEntity="Hive"/>
     </entity>
+    <entity name="Feeding" representedClassName="Feeding" syncable="YES" codeGenerationType="class">
+        <attribute name="ammount" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="Hive" representedClassName="Hive" syncable="YES" codeGenerationType="class">
         <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="String"/>
@@ -22,8 +27,26 @@
         <attribute name="type" optional="YES" attributeType="String"/>
         <relationship name="apiary" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Apiary" inverseName="hives" inverseEntity="Apiary"/>
     </entity>
+    <entity name="Inspection" representedClassName="Inspection" syncable="YES" codeGenerationType="class">
+        <attribute name="broodFrames" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="foodFrames" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="playCells" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="queenCells" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="queenSeen" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Treatment" representedClassName="Treatment" syncable="YES" codeGenerationType="class">
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="outcome" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="temperature" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="treatmentType" optional="YES" attributeType="String"/>
+        <attribute name="usedIngredient" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
         <element name="Apiary" positionX="-63" positionY="-18" width="128" height="179"/>
         <element name="Hive" positionX="-54" positionY="63" width="128" height="149"/>
+        <element name="Feeding" positionX="-63" positionY="90" width="128" height="74"/>
+        <element name="Treatment" positionX="-54" positionY="99" width="128" height="119"/>
+        <element name="Inspection" positionX="-45" positionY="108" width="128" height="104"/>
     </elements>
 </model>

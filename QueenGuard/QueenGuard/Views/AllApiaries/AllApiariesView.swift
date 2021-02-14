@@ -34,8 +34,15 @@ struct AllApiariesView: View {
                     }
                     Button("Add New Apiary") {
                         showAddModal.toggle()
-                    }
-                }.sheet(isPresented: $showAddModal, content: {
+                    }.padding()
+                    .background(Color.secondarySystemGroupedBackground)
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .cornerRadius(15)
+                    .shadow(color: .accentColor, radius: 0.5)
+                    .shadow(color: .accentColor, radius: 0.5)
+                    .shadow(color: .accentColor, radius: 0.5)
+                }.padding()
+                .sheet(isPresented: $showAddModal, content: {
                     AddApiaryView()
                 })
             }.navigationTitle("Apiaries")
