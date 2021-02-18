@@ -24,7 +24,7 @@ struct DummyDataButtonView: View {
             fatalError()
         }
             }
-        }
+        }.navigationTitle("Dummy Data")
     }
 }
 
